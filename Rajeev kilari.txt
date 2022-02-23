@@ -1,0 +1,580 @@
+1. WAP to find maximum between two numbers.
+import java.util.Scanner;
+public class Twonum{
+   
+ public static void main(String[] args){
+      
+  Scanner s = new Scanner(System.in);
+      
+  int a= s.nextInt();
+      
+  int b= s.nextInt();
+      
+  if(a>b){
+         
+   System.out.println(a);
+      
+  }else if(b>a){
+           
+ System.out.println(b);
+      
+  }else{
+         
+   System.out.println("both are equal");
+     
+   }
+    }
+}
+
+2.WAP to find maximum between three numbers.
+import java.util.Scanner;
+public class maxnum{
+  
+  public static void main(String[] args){
+    
+    Scanner s = new Scanner(System.in);
+     
+   int a= s.nextInt();
+       
+ int b= s.nextInt();
+      
+  int c= s.nextInt();
+   
+     if(a>b && a>c){
+           
+ System.out.println("a is max");
+ 
+       }else if(b>c && b>a){
+  
+          System.out.println("b is max");
+    
+    }else if(c>a && c>b){
+          
+  System.out.println("c is max");
+     
+   }else if (a==b && b==c){
+         
+   System.out.print("all are equal");
+      
+  }
+    }
+}
+
+
+
+3. WAP to check whether a number is negative, positive or zero.
+import java.util.Scanner;
+public class Int{
+ 
+   public static void main(String[] args){
+    
+    Scanner s = new Scanner(System.in);
+      
+  int n =s.nextInt();
+        if(n>0){
+    
+        System.out.println("num is postive");
+ 
+       }else if(n<0){
+           
+ System.out.println("num is negative");
+ 
+       }else{
+           
+ System.out.println("num is zero");
+  
+      }
+    }
+    
+}
+
+
+4.WAP to check whether a number is divisible by 5 and 11 or not.
+import java.util.Scanner;
+
+public class Fiveeleven{
+ 
+   public static void main(String[] args){
+     
+   Scanner s = new Scanner(System.in);
+    
+    int n =s.nextInt();
+   
+     if(n%5==0 && n%11==0){
+ 
+           System.out.println("divisible");
+    
+    }else{
+           
+ System.out.println("not divisible");
+   
+     }
+    }
+}
+
+
+
+5. WAP to check whether a number is even or odd.
+import java.util.Scanner;
+
+public class Evenodd{
+  
+  public static void main(String[] args){
+  
+      Scanner s = new Scanner(System.in);
+ 
+       int n =s.nextInt();
+       
+ if(n%2==0){
+          
+  System.out.println("number is even");
+   
+     }else{
+         
+   System.out.println("number is odd");
+  
+      }
+    }
+}
+
+
+
+
+6. WAP to check whether a year is leap year or not.
+import java.util.Scanner;
+
+public class Leapyear{
+   
+ public static void main(String[] args){
+  
+      Scanner s = new Scanner(System.in);
+ 
+       boolean isLeap=false;
+        
+int n =s.nextInt();
+       
+ if(n%4==0 && n%100!=0 || n%400==0){
+  
+          isLeap=true;
+            
+   
+     }
+            System.out.println(isLeap);
+
+    }
+}
+
+
+
+
+7. WAP to check whether a character is alphabet or not.
+import java.util.Scanner;
+
+public class Alphabet{
+  
+  public static void main(String[] args){
+ 
+       Scanner s = new Scanner(System.in);
+ 
+       boolean isAlphabet=false;
+    
+    char ch=s.next().charAt(0);
+      
+  if((ch>=65 && ch<=90) || (ch>=97 && ch<=122)){
+  
+          isAlphabet=true;
+        }
+       
+ System.out.println(isAlphabet);
+  
+  }
+}
+
+
+
+8.WAP to input any alphabet and check whether it is vowel or consonant.
+
+import java.util.Scanner;
+
+public class vowel{
+ 
+   public static void main(String[] args){
+  
+      Scanner s= new Scanner(System.in);
+   
+     char ch= s.next().charAt(0);
+       
+ if(ch=='a' || ch== 'e' || ch== 'i' || ch=='o' || ch=='u'){
+  
+          System.out.println("vowel");
+    
+    }else{
+      
+
+      System.out.println("consonant");
+       
+ }
+    }
+}
+
+
+
+9.WAP to input any character and check whether it is alphabet, digit or special character.
+import java.util.Scanner;
+
+public class Ads{
+ 
+   public static void main(String[] args){
+      
+  Scanner s = new Scanner(System.in);
+    
+    char ch=s.next().charAt(0);
+   
+     
+           
+         if (ch>=48 && ch<=57){
+   
+          System.out.println("digit");
+    
+                }else if((ch>=65 && ch<=90) || (ch>=97 && ch<=122)){
+      
+      System.out.println("alphabet");
+      
+  }else{
+            System.out.println("special character");
+  
+      }
+    }
+}
+
+
+
+10.WAP to check whether a character is uppercase or lowercase     alphabet.
+import java.util.Scanner;
+
+public class Alphabet{
+  
+  public static void main(String[] args){
+     
+   Scanner s = new Scanner(System.in);
+    
+    boolean isAlphabet=false;
+        
+char ch=s.next().charAt(0);
+       
+ if((ch>=65 && ch<=90) || (ch>=97 && ch<=122)){
+    
+        isAlphabet=true;
+        }
+       
+ System.out.println(isAlphabet);
+    
+}
+}
+
+
+
+
+11.WAP to input week number and print week day.
+import java.util.Scanner;
+
+public class week{
+   
+ public static void main(String[] args){
+   
+     Scanner s = new Scanner(System.in);
+
+        int n =s.nextInt();
+       
+ if(n==1){
+           
+ System.out.println("sunday");
+ 
+       }else if(n==2){
+        
+    System.out.println("monday");
+    
+    }else if(n==3){
+          
+  System.out.println("tuesday");
+      
+  } else if(n==4){
+         
+   System.out.println("wednesday");
+      
+  } else if(n==5){
+        
+    System.out.println("thursday");
+ 
+       }else if(n==6){
+          
+  System.out.println("friday");
+      
+  }else{
+          
+  System.out.println("saturday");
+   
+     }}
+}
+
+
+
+
+
+12.WAP to count total number of notes in given amount.
+import java.util.Scanner;
+
+public class Notes{
+ 
+   public static void main(String[] args){
+   
+     Scanner s = new Scanner(System.in);
+   
+     int n =s.nextInt();
+       
+ int notes=0;
+       
+ if(n>=2000){
+       
+     notes=n/2000;
+    
+        n=n%2000;
+      
+  }
+        if(n>=500){
+    
+        notes=notes + n/500;
+    
+        n=n%500;
+        }
+        
+if(n>=200){
+       
+     notes=notes + n/200;
+    
+        n=n%200;
+        }
+      
+  if(n>=100){
+        
+    notes=notes+ n/100;
+   
+         n=n%100;
+        }
+  
+      
+        System.out.println(notes);
+  
+  }
+}
+   
+
+
+
+13. WAP to input marks of five subjects Physics, Chemistry, Biology,Mathematics 
+and Computer. Calculate percentage and grade according to following:
+   
+ Percentage >= 90% : Grade A
+    Percentage >= 80% : Grade B
+   
+ Percentage >= 70% : Grade C
+    Percentage >= 60% : Grade D
+   
+ Percentage >= 40% : Grade E
+    Percentage < 40% : Grade F
+
+ 
+        import java.util.Scanner;
+
+public class Percent{
+   
+ public static void main(String[] args){
+  
+      Scanner s = new Scanner(System.in);
+    
+    int[] arr = new int[5];
+    
+    int total=0;
+        for(int i=0;i<5;i++){
+  
+          arr[i]=s.nextInt();
+          
+  total=total+arr[i];
+        }
+      
+  double max=500;
+     
+   double Percentage=(total*100)/500;
+    
+    if( Percentage >= 90){
+          
+  System.out.println("grade : A");
+   
+     }if( Percentage >= 80 && Percentage<90){
+    
+        System.out.println("grade : B");
+     
+   }if( Percentage >= 70 && Percentage<80){
+    
+        System.out.println("grade : C");
+      
+  }if( Percentage >= 60 && Percentage<70){
+          
+  System.out.println("grade : D");
+      
+  }if( Percentage >= 40 && Percentage<60){
+       
+     System.out.println("grade : E");
+       
+ }if(Percentage<40){
+          
+  System.out.println("grade : F");
+  
+      }
+    }
+}
+
+
+14. WAP to input basic salary of an employee
+ and calculate its Gross  
+   salary according to following:
+ 
+   Basic Salary <= 10000 : HRA = 20%, DA = 80%
+  
+  Basic Salary <= 20000 : HRA = 25%, DA = 90%
+  
+  Basic Salary > 20000 : HRA = 30%, DA = 95%
+import java.util.Scanner;
+
+public class Salary{
+   
+ public static void main(String[] args){
+ 
+       Scanner s = new Scanner(System.in);
+  
+      double basicSalary=s.nextInt();
+    
+    double grossSalary=0;
+       
+ if(basicSalary<=10000){
+          
+  grossSalary= basicSalary + 0.2*basicSalary + 0.8*basicSalary;
+  
+      }else if (basicSalary<=20000){
+           
+ grossSalary= basicSalary + 0.25*basicSalary + 0.9*basicSalary;
+    
+    }else if (basicSalary>20000){
+           
+ grossSalary= basicSalary + 0.3*basicSalary + 0.95*basicSalary;
+  
+      }
+        System.out.println(grossSalary);
+  
+  }
+}
+
+
+15. WAP to input electricity unit charges and calculate total  
+   electricity bill according to the given condition:
+   
+ For first 50 units Rs. 0.50/unit
+    For next 100 units Rs. 0.75/unit
+ 
+   For next 100 units Rs. 1.20/unit
+     For unit above 250 Rs. 1.50/unit
+  
+   An additional surcharge of 20% is added to the bill
+import java.util.Scanner;
+
+public class Electricity{
+  
+  public static void main(String[] args){
+ 
+       Scanner s = new Scanner(System.in);
+   
+     int units =s.nextInt();
+        double bill=0;
+ 
+       double totalBill=0;
+        
+if(units<=50){
+    
+        bill= 0.5*units;
+           
+ totalBill=bill+(0.2*bill);
+      
+  }
+        else if(units>50 && units<=150){
+    
+        bill= 0.75*units;
+          
+  totalBill=bill+(0.2*bill);
+      
+  }else if(units>150 && units<=250){
+   
+         bill= 1.20*units;
+           
+ totalBill=bill+(0.2*bill);
+       
+ }else if(units>250){
+          
+  bill= 1.50*units;
+         
+   totalBill=bill+(0.2*bill);
+    
+    }
+    }
+}
+    
+
+
+16.WAP to print day of week name using switch case.
+import java.util.Scanner;
+
+public class weekswitch
+{
+   
+ public static void main(String s[])
+ 
+   {
+        Scanner sc = new Scanner(System.in);
+ 
+       int day = sc.nextInt();
+        
+    
+    switch(day)
+        {
+            case 1:
+                System.out.println("Monday");
+ 
+               break;
+            case 2:
+                System.out.println("Tuesday");
+   
+             break;
+            case 3:
+                System.out.println("Wednesday");
+  
+              break;
+            case 4:
+                System.out.println("Thursday");
+  
+              break;
+            case 5:
+                System.out.println("Friday");
+ 
+               break;
+                case 6:
+                     System.out.println("saturday");
+     
+                break;
+            default:
+                System.out.println("sunday");
+             
+   break;
+        }
+    }
+}
+
+
