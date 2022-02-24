@@ -1,20 +1,18 @@
-//Writ A Program to print even numbers between 1-n.
+//Writ A Program to print factors of a given number.
 
 
 import java.util.Scanner;
-class Even{
+class Fact{
     
-    public static void main(String args[])
-    {
+    public static void main(String args[]){
         
         Scanner s=new Scanner(System.in);
          System.out.println("Enter n value");
-         int n=s.nextInt();   
+         int n=s.nextInt();
          
-         for(int i=1;i<=n;i++)
-         {    
+         for(int i=1;i<=n/2;i++){      //100
              
-             if(i%2==0){
+             if(n%i==0){
                  System.out.print(i+" ");
              }
          }
